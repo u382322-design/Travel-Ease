@@ -1,0 +1,7 @@
+# robots.txt for TravelEase (Portfolio Demo Project)
+User-agent: *
+Allow: /
+Disallow: /booking-confirmation
+
+# Sitemap Location
+Sitemap: https://travelease.example.com/sitemap.xml

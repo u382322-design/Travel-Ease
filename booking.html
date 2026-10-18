@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Your Dream Vacation | TravelEase</title>
+  <meta name="description" content="Reserve your tailored travel experience with TravelEase. Interactive booking simulation form with client-side validation and instant demo confirmation.">
+  <meta name="keywords" content="book travel, vacation reservation, tour booking, trip inquiry">
+  <link rel="canonical" href="https://travelease.example.com/booking.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book Your Dream Vacation | TravelEase">
+  <meta property="og:description" content="Simulated tour booking request with comprehensive validation.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://travelease.example.com/booking.html">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="demo-top-banner" role="status" aria-label="Portfolio notice">
+    <i class="bi bi-info-circle-fill me-1"></i>
+    <strong>Frontend Developer CV Demo:</strong> Simulated booking request form. No financial transactions or live airline tickets are processed.
+  </div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="TravelEase Home">
+          <img src="assets/images/logo.svg" alt="TravelEase Logo" width="180" height="40">
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar" aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="booking.html" class="btn btn-primary btn-pill active">
+              <i class="bi bi-calendar-check"></i> Book a Trip
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-header-section" aria-label="Page Title Banner">
+    <div class="container text-center text-md-start">
+      <ol class="breadcrumb-custom mb-3 justify-content-center justify-content-md-start">
+        <li><a href="index.html">Home</a></li>
+        <li class="active" aria-current="page">Booking Request</li>
+      </ol>
+      <h1>Request a Vacation Booking</h1>
+      <p class="lead mb-0 text-white-50">Select your package, choose travel dates, and receive an instant simulated confirmation summary.</p>
+    </div>
+  </section>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" class="section-padding bg-sand-light">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Left Column: Form -->
+        <div class="col-lg-8">
+          <div class="card border-0 shadow-sm p-4 p-md-5 bg-white" style="border-radius: var(--radius-xl);">
+            
+            <div class="mb-4">
+              <span class="badge-custom badge-ocean mb-2">Simulated Reservation</span>
+              <h2 class="h3 fw-bold text-ocean">Traveler & Journey Details</h2>
+              <p class="text-muted small">Please complete the required details below. All fields marked with an asterisk (<span class="text-danger">*</span>) are mandatory.</p>
+            </div>
+
+            <!-- Booking Form -->
+            <form id="travelBookingForm" novalidate aria-label="Travel Booking Form">
+              
+              <!-- Personal Details Section -->
+              <h3 class="h5 fw-bold text-ocean mb-3 pb-2 border-bottom">1. Primary Contact Information</h3>
+              <div class="row g-3 mb-4">
+                <div class="col-md-12">
+                  <label for="bookingName" class="form-label">Full Legal Name <span class="text-danger">*</span></label>
+                  <input type="text" id="bookingName" name="name" class="form-control" placeholder="e.g. Jane Doe" required aria-required="true">
+                  <div class="invalid-feedback">Please enter your full name (minimum 2 characters).</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" id="bookingEmail" name="email" class="form-control" placeholder="name@example.com" required aria-required="true">
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="bookingPhone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" id="bookingPhone" name="phone" class="form-control" placeholder="+1 (555) 234-5678" required aria-required="true">
+                  <div class="invalid-feedback">Please enter a valid phone number (at least 7 digits).</div>
+                </div>
+              </div>
+
+              <!-- Journey Details Section -->
+              <h3 class="h5 fw-bold text-ocean mb-3 pb-2 border-bottom">2. Destination & Package Selection</h3>
+              <div class="row g-3 mb-4">
+                <div class="col-12">
+                  <label for="bookingPackage" class="form-label">Select Package <span class="text-danger">*</span></label>
+                  <select id="bookingPackage" name="package" class="form-select" required aria-required="true">
+                    <option value="" disabled selected>-- Select a curated travel package --</option>
+                    <!-- Populated dynamically by js/validation.js -->
+                  </select>
+                  <div class="invalid-feedback">Please select a destination package from the catalogue.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="bookingDeparture" class="form-label">Departure Date <span class="text-danger">*</span></label>
+                  <input type="date" id="bookingDeparture" name="departure" class="form-control" required aria-required="true">
+                  <div class="invalid-feedback">Departure date must be tomorrow or later.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="bookingReturn" class="form-label">Return Date <span class="text-danger">*</span></label>
+                  <input type="date" id="bookingReturn" name="return" class="form-control" required aria-required="true">
+                  <div class="invalid-feedback">Return date must be strictly after the departure date.</div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="bookingTravellers" class="form-label">Travellers (Max 10) <span class="text-danger">*</span></label>
+                  <input type="number" id="bookingTravellers" name="travellers" class="form-control" value="2" min="1" max="10" required aria-required="true">
+                  <div class="invalid-feedback">Enter a positive number of travellers (1 to 10).</div>
+                </div>
+
+                <!-- Dynamic Real-time Calculation Container -->
+                <div class="col-12" id="priceEstimateDisplay" aria-live="polite"></div>
+              </div>
+
+              <!-- Special Requests & Consent Section -->
+              <h3 class="h5 fw-bold text-ocean mb-3 pb-2 border-bottom">3. Preferences & Agreement</h3>
+              <div class="row g-3 mb-4">
+                <div class="col-12">
+                  <label for="bookingRequests" class="form-label">Special Requests or Dietary Requirements (Optional)</label>
+                  <textarea id="bookingRequests" name="requests" class="form-control" rows="3" placeholder="e.g. Vegetarian meals, adjoining suites, anniversary celebration arrangement..."></textarea>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="bookingConsent" required aria-required="true">
+                    <label class="form-check-label" for="bookingConsent">
+                      I understand that this is a <strong>fictional portfolio demo</strong>. Submitting this form creates a simulated reservation summary and no payment will be charged. <span class="text-danger">*</span>
+                    </label>
+                    <div class="invalid-feedback">You must acknowledge the demo terms to submit.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="bi bi-send-check-fill me-1"></i> Submit Demo Booking Request
+                </button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Sidebar Info & Peace of Mind -->
+        <div class="col-lg-4">
+          
+          <div class="card border-0 shadow-sm p-4 bg-white mb-4" style="border-radius: var(--radius-lg);">
+            <h4 class="h5 fw-bold text-ocean mb-3"><i class="bi bi-shield-lock-fill text-teal me-2"></i>Booking Guarantee</h4>
+            <ul class="list-unstyled mb-0 small text-muted">
+              <li class="d-flex align-items-start gap-2 mb-3">
+                <i class="bi bi-check-circle text-teal fs-5 mt-n1"></i>
+                <span><strong>Zero Obligation:</strong> This demonstration requires no credit card and does not initiate payments.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2 mb-3">
+                <i class="bi bi-check-circle text-teal fs-5 mt-n1"></i>
+                <span><strong>Instant Confirmation:</strong> Test our client-side confirmation modal instantly with full summary calculation.</span>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <i class="bi bi-check-circle text-teal fs-5 mt-n1"></i>
+                <span><strong>Accessible & Responsive:</strong> Validated in real-time according to WCAG 2.1 accessibility guidelines.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card border-0 shadow-sm p-4 bg-sand mb-4" style="border-radius: var(--radius-lg); background-color: var(--accent-sand);">
+            <h4 class="h6 fw-bold text-ocean mb-2"><i class="bi bi-telephone-inbound-fill text-teal me-2"></i>Need Help Choosing?</h4>
+            <p class="small text-muted mb-3">Our concierge team is available to assist you in designing a personalized multi-country itinerary.</p>
+            <a href="contact.html" class="btn btn-outline-primary btn-sm w-100">
+              Speak with a Specialist
+            </a>
+          </div>
+
+          <!-- Quick FAQ Tip -->
+          <div class="card border-0 shadow-sm p-4 bg-white" style="border-radius: var(--radius-lg);">
+            <h4 class="h6 fw-bold text-ocean mb-2"><i class="bi bi-lightbulb-fill text-warning me-2"></i>Booking Tip</h4>
+            <p class="small text-muted mb-0">
+              Arrival flights should ideally be booked for morning arrivals to participate in the welcome cocktails included on Day 1 of each package.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Complete Footer -->
+  <footer class="footer-custom" role="contentinfo">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3" aria-label="TravelEase Home">
+            <img src="assets/images/logo-white.svg" alt="TravelEase White Logo" width="180" height="40">
+          </a>
+          <p class="text-white-50 pe-lg-4">
+            TravelEase is a fictional modern travel agency web application built to showcase responsive frontend development, accessible UI/UX, and robust client-side validation.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-teal small"></i> Home</a></li>
+            <li><a href="destinations.html"><i class="bi bi-chevron-right text-teal small"></i> Destinations</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right text-teal small"></i> Packages</a></li>
+            <li><a href="booking.html"><i class="bi bi-chevron-right text-teal small"></i> Book a Trip</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-teal small"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-teal small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Categories</h5>
+          <ul class="footer-links">
+            <li><a href="destinations.html?category=Beach+%26+Island"><i class="bi bi-chevron-right text-teal small"></i> Beach & Island</a></li>
+            <li><a href="destinations.html?category=Cultural+%26+Heritage"><i class="bi bi-chevron-right text-teal small"></i> Cultural & Heritage</a></li>
+            <li><a href="destinations.html?category=Adventure"><i class="bi bi-chevron-right text-teal small"></i> Mountain Adventure</a></li>
+            <li><a href="destinations.html?category=Luxury"><i class="bi bi-chevron-right text-teal small"></i> Luxury Collection</a></li>
+            <li><a href="destinations.html?category=Domestic"><i class="bi bi-chevron-right text-teal small"></i> Domestic Getaways</a></li>
+            <li><a href="destinations.html?category=International"><i class="bi bi-chevron-right text-teal small"></i> International Escapes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Head Office (Demo)</h5>
+          <ul class="footer-links text-white-50">
+            <li class="d-flex align-items-start gap-2 mb-2">
+              <i class="bi bi-geo-alt-fill text-teal mt-1"></i>
+              <span>742 Evergreen Voyage Way, Suite 400<br>San Francisco, CA 94107</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-telephone-fill text-teal"></i>
+              <a href="tel:+18005550199">+1 (800) 555-0199</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill text-teal"></i>
+              <a href="mailto:concierge@travelease-demo.com">concierge@travelease-demo.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-white-50">
+          &copy; <span class="current-year">2026</span> TravelEase. All rights reserved. Created for Frontend Developer Portfolio.
+        </p>
+        <div class="d-flex gap-4">
+          <a href="privacy.html" class="text-white-50 text-decoration-none">Privacy Policy</a>
+          <a href="about.html" class="text-white-50 text-decoration-none">Terms of Service</a>
+          <a href="sitemap.xml" class="text-white-50 text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-container-custom position-fixed bottom-0 end-0 p-3" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/destinations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TravelEase | Modern Travel Experiences & Curated Journeys</title>
+  <meta name="description" content="Discover handcrafted travel itineraries, luxury escapes, cultural odysseys, and outdoor adventures with TravelEase. Fictional travel agency portfolio project.">
+  <meta name="keywords" content="travel agency, vacation packages, luxury tours, destinations, adventure trips, holiday bookings">
+  <meta name="author" content="TravelEase Frontend Developer">
+  <link rel="canonical" href="https://travelease.example.com/index.html">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TravelEase | Modern Travel Experiences & Curated Journeys">
+  <meta property="og:description" content="Explore handcrafted travel packages, cultural journeys, and luxury vacations around the world.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:url" content="https://travelease.example.com/index.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data (Accurately labelled as portfolio demo) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "TravelEase (Portfolio Showcase)",
+    "description": "Fictional travel agency project created for frontend web development portfolio demonstration.",
+    "url": "https://travelease.example.com",
+    "priceRange": "$$$",
+    "telephone": "+1-800-555-0199",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "742 Evergreen Voyage Way",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94107",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Demo Notice Banner -->
+  <div class="demo-top-banner" role="status" aria-label="Portfolio notice">
+    <i class="bi bi-info-circle-fill me-1"></i>
+    <strong>Frontend Developer CV Demo:</strong> TravelEase is a fictional showcase site. All tour packages, prices, and reviews are illustrative demo values. <a href="about.html">Read project details</a>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-label="TravelEase Home">
+          <img src="assets/images/logo.svg" alt="TravelEase Logo" width="180" height="40">
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar" aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinations.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="booking.html" class="btn btn-primary btn-pill">
+              <i class="bi bi-calendar-check"></i> Book a Trip
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- 1. Hero Banner Section -->
+    <section class="hero-section text-center text-lg-start" aria-label="Hero Introduction">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mx-auto text-center">
+            <span class="badge-custom badge-teal text-white mb-3" style="background: rgba(0, 168, 150, 0.35); border: 1px solid rgba(255, 255, 255, 0.4);">
+              <i class="bi bi-compass-fill me-1"></i> Handcrafted Worldwide Travel
+            </span>
+            <h1 class="display-4 fw-bold">Journey Farther, <span class="hero-highlight">Travel with Ease</span></h1>
+            <p class="lead mx-auto">
+              Unpack breathtaking destinations with curated itineraries, premium chalets, private catamaran sails, and unforgettable cultural adventures across six continents.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <a href="destinations.html" class="btn btn-primary btn-lg btn-pill">
+                Explore All Destinations <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="packages.html" class="btn btn-outline-light btn-lg btn-pill">
+                Featured Packages
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Destination Search Panel -->
+    <section class="container" aria-label="Quick Destination Search">
+      <div class="search-panel-card">
+        <form id="homeSearchForm" class="row g-3 align-items-end" role="search">
+          <div class="col-12 col-md-4">
+            <label for="homeSearchDestination" class="search-field-label">
+              <i class="bi bi-search text-teal"></i> Destination / Keyword
+            </label>
+            <input type="text" id="homeSearchDestination" name="q" class="form-control search-control" placeholder="e.g. Greece, Kyoto, Safari, Alps...">
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <label for="homeSearchCategory" class="search-field-label">
+              <i class="bi bi-tag-fill text-teal"></i> Travel Category
+            </label>
+            <select id="homeSearchCategory" name="category" class="form-select search-control">
+              <option value="All">All Categories</option>
+              <option value="Beach & Island">Beach & Island</option>
+              <option value="Cultural & Heritage">Cultural & Heritage</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Domestic">Domestic</option>
+              <option value="International">International</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-3">
+            <label for="homeSearchBudget" class="search-field-label">
+              <i class="bi bi-cash-stack text-teal"></i> Budget Range
+            </label>
+            <select id="homeSearchBudget" name="budget" class="form-select search-control">
+              <option value="all">Any Budget</option>
+              <option value="under-1500">Under $1,500 USD</option>
+              <option value="1500-2500">$1,500 - $2,500 USD</option>
+              <option value="2500-3500">$2,500 - $3,500 USD</option>
+              <option value="over-3500">$3,500+ USD</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-2">
+            <button type="submit" class="btn btn-primary w-100 search-control d-flex justify-content-center align-items-center">
+              <i class="bi bi-search me-1"></i> Search
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 3. Popular Destinations Section -->
+    <section class="section-padding" aria-label="Popular Destinations">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8">
+            <span class="section-subtitle">Trending Getaways</span>
+            <h2 class="section-heading">Popular Destinations</h2>
+            <p class="section-desc">Hand-picked by our travel designers, these iconic destinations offer unforgettable scenery, top-rated boutique accommodations, and rich cultural immersion.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+            <a href="destinations.html" class="btn btn-outline-primary btn-pill">
+              View All Destinations <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Rendered reactively via js/filters.js -->
+        <div class="row g-4" id="popularDestinationsGrid">
+          <!-- Fallback initial server-rendered markup for instant accessibility -->
+          <div class="col-12 text-center py-5">
+            <div class="spinner-border text-teal" role="status">
+              <span class="visually-hidden">Loading destinations...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Travel Packages -->
+    <section class="section-padding bg-sand-light" aria-label="Featured Travel Packages">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">Curated Bundles</span>
+          <h2 class="section-heading">Featured Travel Packages</h2>
+          <p class="section-desc mx-auto">Comprehensive itineraries crafted with private guides, premium transfers, signature meals, and flexible booking terms.</p>
+        </div>
+
+        <div class="row g-4" id="featuredPackagesGrid">
+          <!-- Populated by js/filters.js -->
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="packages.html" class="btn btn-primary btn-lg btn-pill">
+            Compare All 14 Packages <i class="bi bi-grid-3x3-gap-fill ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Domestic & International Categories -->
+    <section class="section-padding" aria-label="Travel Categories">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">Explore by Style</span>
+          <h2 class="section-heading">Travel Categories</h2>
+          <p class="section-desc mx-auto">Whether you are dreaming of remote peaks, ancient temple sanctuaries, or sunny coastal shores, we have the perfect itinerary.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="destinations.html?category=Beach+%26+Island" class="category-box">
+              <div class="category-icon-wrapper">
+                <i class="bi bi-water"></i>
+              </div>
+              <h3 class="h6 fw-bold mb-1">Beach & Island</h3>
+              <small class="text-muted">Coastal Escapes</small>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="destinations.html?category=Cultural+%26+Heritage" class="category-box">
+              <div class="category-icon-wrapper">
+                <i class="bi bi-bank"></i>
+              </div>
+              <h3 class="h6 fw-bold mb-1">Cultural</h3>
+              <small class="text-muted">Ancient Wonders</small>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="destinations.html?category=Adventure" class="category-box">
+              <div class="category-icon-wrapper">
+                <i class="bi bi-compass"></i>
+              </div>
+              <h3 class="h6 fw-bold mb-1">Adventure</h3>
+              <small class="text-muted">Wild Expeditions</small>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="destinations.html?category=Luxury" class="category-box">
+              <div class="category-icon-wrapper">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h3 class="h6 fw-bold mb-1">Luxury</h3>
+              <small class="text-muted">First-Class Living</small>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="destinations.html?category=Domestic" class="category-box">
+              <div class="category-icon-wrapper">
+                <i class="bi bi-pin-map-fill"></i>
+              </div>
+              <h3 class="h6 fw-bold mb-1">Domestic</h3>
+              <small class="text-muted">National Treasures</small>
+            </a>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="destinations.html?category=International" class="category-box">
+              <div class="category-icon-wrapper">
+                <i class="bi bi-globe-americas"></i>
+              </div>
+              <h3 class="h6 fw-bold mb-1">International</h3>
+              <small class="text-muted">Global Journeys</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Why Choose TravelEase -->
+    <section class="section-padding bg-sand-light" aria-label="Why Choose Us">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">The TravelEase Difference</span>
+          <h2 class="section-heading">Why Choose TravelEase</h2>
+          <p class="section-desc mx-auto">We combine local travel insights with world-class personalized service to craft effortless, sustainable, and stress-free holidays.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon-circle">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Verified Eco Partners</h3>
+              <p class="text-muted mb-0">We collaborate with accredited eco-lodges, carbon-neutral operators, and ethical local wildlife sanctuaries.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon-circle">
+                <i class="bi bi-headset"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">24/7 Travel Concierge</h3>
+              <p class="text-muted mb-0">Our multilingual support team is on standby around the clock via chat, phone, and app to solve any itinerary change.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon-circle">
+                <i class="bi bi-sliders2-vertical"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Tailored Itineraries</h3>
+              <p class="text-muted mb-0">Every package is customizable with private excursions, dietary adjustments, and upgraded flight or room classes.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card">
+              <div class="feature-icon-circle">
+                <i class="bi bi-cash-coin"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Transparent Pricing</h3>
+              <p class="text-muted mb-0">Clear inclusions, no hidden resort charges, and upfront cancellation options guarantee complete peace of mind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. How It Works -->
+    <section class="section-padding" aria-label="How It Works">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">Simple 4-Step Process</span>
+          <h2 class="section-heading">How It Works</h2>
+          <p class="section-desc mx-auto">From inspiration to departure, planning your dream getaway has never been simpler.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number">1</div>
+              <h3 class="h5 fw-bold mb-2">Select Your Journey</h3>
+              <p class="text-muted">Browse our catalogue of curated packages or filter by budget, continent, and duration.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number">2</div>
+              <h3 class="h5 fw-bold mb-2">Personalize Details</h3>
+              <p class="text-muted">Choose your departure dates, number of travellers, activity preferences, and special dietary needs.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number">3</div>
+              <h3 class="h5 fw-bold mb-2">Confirm Your Request</h3>
+              <p class="text-muted">Submit your reservation details and receive an immediate reference summary and confirmation.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="step-card">
+              <div class="step-number">4</div>
+              <h3 class="h5 fw-bold mb-2">Embark & Relax</h3>
+              <p class="text-muted">Enjoy seamless airport transfers, verified local guides, and 24/7 on-trip concierge assistance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Travel Gallery -->
+    <section class="section-padding bg-sand-light" aria-label="Travel Photo Gallery">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">Visual Inspiration</span>
+          <h2 class="section-heading">Travel Moments Gallery</h2>
+          <p class="section-desc mx-auto">A glimpse into the extraordinary landscapes and unforgettable encounters awaiting you.</p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" alt="Santorini Greek caldera view" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="h6 fw-bold mb-0">Oia, Santorini</h4>
+                <small>Aegean Sunset</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Arashiyama bamboo forest in Kyoto Japan" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="h6 fw-bold mb-0">Kyoto, Japan</h4>
+                <small>Ancient Bamboo Groves</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" alt="Swiss Alps snowy peaks" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="h6 fw-bold mb-0">Zermatt, Switzerland</h4>
+                <small>Matterhorn Alpine Vista</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" alt="Amalfi coast cliffside village Italy" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="h6 fw-bold mb-0">Positano, Italy</h4>
+                <small>Amalfi Coastline</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" alt="Wildlife safari in Serengeti Tanzania" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="h6 fw-bold mb-0">Serengeti, Tanzania</h4>
+                <small>Big Five Savanna Safari</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80" alt="Iceland Northern Lights Aurora Borealis" loading="lazy">
+              <div class="gallery-overlay">
+                <h4 class="h6 fw-bold mb-0">Reykjavik, Iceland</h4>
+                <small>Aurora Borealis & Glaciers</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Clearly Labelled Fictional Testimonials -->
+    <section class="section-padding" aria-label="Customer Reviews">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">Traveler Stories</span>
+          <h2 class="section-heading">What Travelers Say</h2>
+          <p class="section-desc mx-auto">Stories and feedback from fictional travelers designed to illustrate real-world client testimonial cards.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="rating-stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="fst-italic text-secondary flex-grow-1">
+                "The Santorini Sunset package exceeded every expectation. Our private catamaran cruise in the caldera was the highlight of our decade. Everything was flawlessly organized from touchdown to departure."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova portrait" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <h4 class="h6 fw-bold mb-0">Elena Rostova</h4>
+                  <small class="text-muted">Traveled to Greece &bull; May 2026</small>
+                  <span class="demo-disclaimer-tag">Fictional Demo Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="rating-stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="fst-italic text-secondary flex-grow-1">
+                "Our Kyoto Cultural Odyssey was deeply enriching. The private tea ceremony with the master and our stay at the historic ryokan gave us an intimate glimpse into traditional Japan. 10/10."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Chen portrait" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <h4 class="h6 fw-bold mb-0">Marcus Chen</h4>
+                  <small class="text-muted">Traveled to Japan &bull; April 2026</small>
+                  <span class="demo-disclaimer-tag">Fictional Demo Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="rating-stars mb-3">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="fst-italic text-secondary flex-grow-1">
+                "The Swiss Alps tour was spectacular! Seamless train connections with the Glacier Express, stunning chalets, and mountain fondue evenings. The TravelEase support team was proactive and responsive."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-3 border-top">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sarah Jenkins portrait" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <h4 class="h6 fw-bold mb-0">Sarah Jenkins</h4>
+                  <small class="text-muted">Traveled to Switzerland &bull; Jan 2026</small>
+                  <span class="demo-disclaimer-tag">Fictional Demo Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FAQ Accordion -->
+    <section class="section-padding bg-sand-light" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="text-center section-title-wrap">
+          <span class="section-subtitle">Got Questions?</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+          <p class="section-desc mx-auto">Find quick answers regarding our booking procedure, pricing transparency, and customization options.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion accordion-custom" id="travelFaqAccordion">
+              
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                    What is included in TravelEase packages?
+                  </button>
+                </h3>
+                <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#travelFaqAccordion">
+                  <div class="accordion-body">
+                    Our curated packages generally include handpicked 4 to 5-star boutique accommodations, daily artisanal breakfasts, certified English-speaking local guides, all designated activity entrance fees, and private ground transfers. International airfares and personal expenses are typically excluded unless specifically noted.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                    Can I customize a pre-designed itinerary?
+                  </button>
+                </h3>
+                <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#travelFaqAccordion">
+                  <div class="accordion-body">
+                    Yes! Every package can be tailored to match your pace, dietary preferences, hotel upgrades, or specific landmark additions. Simply note your preferences in the special requests field during booking or contact our travel designers directly.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                    What is the cancellation and refund policy?
+                  </button>
+                </h3>
+                <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#travelFaqAccordion">
+                  <div class="accordion-body">
+                    Most standard demo packages provide full refunds up to 30 days prior to departure, with flexible date transfers permitted up to 14 days before arrival. Detailed cancellation milestones are displayed on each package details page.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                    Is TravelEase a live booking service?
+                  </button>
+                </h3>
+                <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#travelFaqAccordion">
+                  <div class="accordion-body">
+                    <strong>Portfolio Demonstration:</strong> TravelEase is a fictional showcase website built with HTML5, CSS3, Bootstrap 5, and vanilla JavaScript ES6+. No real money transactions take place, and submissions generate simulated confirmation summaries for developer demonstration.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeadingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                    Do you cater to dietary needs and mobility restrictions?
+                  </button>
+                </h3>
+                <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#travelFaqAccordion">
+                  <div class="accordion-body">
+                    Absolutely. We arrange gluten-free, vegan, halal, and kosher culinary adjustments, and can coordinate step-free transportation or accessible hotel suites upon advance request.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Newsletter Signup -->
+    <section class="section-padding" aria-label="Newsletter Subscription">
+      <div class="container">
+        <div class="p-5 rounded-4 text-white text-center text-lg-start position-relative overflow-hidden" style="background: linear-gradient(135deg, var(--primary-ocean) 0%, var(--secondary-teal-dark) 100%);">
+          <div class="row align-items-center position-relative" style="z-index: 2;">
+            <div class="col-lg-7">
+              <span class="badge-custom badge-teal text-white mb-2" style="background: rgba(255, 255, 255, 0.2);">Insider Travel Dispatch</span>
+              <h2 class="h1 fw-bold text-white mb-2">Get Inspired for Your Next Journey</h2>
+              <p class="text-white-50 mb-0">Join 25,000+ wanderers receiving our monthly destination guides, seasonal flight tips, and exclusive portfolio offers.</p>
+            </div>
+            <div class="col-lg-5 mt-4 mt-lg-0">
+              <form class="newsletter-form" novalidate>
+                <div class="input-group">
+                  <input type="email" class="form-control" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+                  <button class="btn btn-primary px-4" type="submit">Subscribe</button>
+                </div>
+                <div class="form-text text-white-50 mt-2 small">
+                  <i class="bi bi-shield-lock me-1"></i> Demo signup form. No spam or commercial emails will ever be sent.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Contact CTA Banner -->
+    <section class="py-5 bg-sand-light text-center border-top border-bottom" aria-label="Quick Contact Call to Action">
+      <div class="container">
+        <h3 class="fw-bold text-ocean mb-2">Have a Custom Vacation in Mind?</h3>
+        <p class="text-muted mb-4 max-w-600 mx-auto">Speak with our destination specialists to design a personalized trip around your dream sights, dates, and budget.</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="contact.html" class="btn btn-primary btn-pill">
+            <i class="bi bi-envelope"></i> Contact Concierge
+          </a>
+          <a href="booking.html" class="btn btn-outline-primary btn-pill">
+            <i class="bi bi-calendar-event"></i> Request a Booking
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Complete Footer -->
+  <footer class="footer-custom" role="contentinfo">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="d-inline-block mb-3" aria-label="TravelEase Home">
+            <img src="assets/images/logo-white.svg" alt="TravelEase White Logo" width="180" height="40">
+          </a>
+          <p class="text-white-50 pe-lg-4">
+            TravelEase is a fictional modern travel agency web application built to showcase responsive frontend development, accessible UI/UX, and robust client-side validation.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TravelEase on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TravelEase on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TravelEase on X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TravelEase on LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-teal small"></i> Home</a></li>
+            <li><a href="destinations.html"><i class="bi bi-chevron-right text-teal small"></i> Destinations</a></li>
+            <li><a href="packages.html"><i class="bi bi-chevron-right text-teal small"></i> Packages</a></li>
+            <li><a href="booking.html"><i class="bi bi-chevron-right text-teal small"></i> Book a Trip</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-teal small"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-teal small"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Categories</h5>
+          <ul class="footer-links">
+            <li><a href="destinations.html?category=Beach+%26+Island"><i class="bi bi-chevron-right text-teal small"></i> Beach & Island</a></li>
+            <li><a href="destinations.html?category=Cultural+%26+Heritage"><i class="bi bi-chevron-right text-teal small"></i> Cultural & Heritage</a></li>
+            <li><a href="destinations.html?category=Adventure"><i class="bi bi-chevron-right text-teal small"></i> Mountain Adventure</a></li>
+            <li><a href="destinations.html?category=Luxury"><i class="bi bi-chevron-right text-teal small"></i> Luxury Collection</a></li>
+            <li><a href="destinations.html?category=Domestic"><i class="bi bi-chevron-right text-teal small"></i> Domestic Getaways</a></li>
+            <li><a href="destinations.html?category=International"><i class="bi bi-chevron-right text-teal small"></i> International Escapes</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Head Office (Demo)</h5>
+          <ul class="footer-links text-white-50">
+            <li class="d-flex align-items-start gap-2 mb-2">
+              <i class="bi bi-geo-alt-fill text-teal mt-1"></i>
+              <span>742 Evergreen Voyage Way, Suite 400<br>San Francisco, CA 94107</span>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-telephone-fill text-teal"></i>
+              <a href="tel:+18005550199">+1 (800) 555-0199</a>
+            </li>
+            <li class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-fill text-teal"></i>
+              <a href="mailto:concierge@travelease-demo.com">concierge@travelease-demo.com</a>
+            </li>
+            <li class="d-flex align-items-center gap-2">
+              <i class="bi bi-clock-fill text-teal"></i>
+              <span>Mon - Fri: 8:00 AM - 7:00 PM PST</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <p class="mb-0 text-white-50">
+          &copy; <span class="current-year">2026</span> TravelEase. All rights reserved. Created for Frontend Developer Portfolio.
+        </p>
+        <div class="d-flex gap-4">
+          <a href="privacy.html" class="text-white-50 text-decoration-none">Privacy Policy</a>
+          <a href="about.html" class="text-white-50 text-decoration-none">Terms of Service (Demo)</a>
+          <a href="sitemap.xml" class="text-white-50 text-decoration-none">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container for Accessible Feedback -->
+  <div class="toast-container-custom position-fixed bottom-0 end-0 p-3" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="js/destinations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+</html>
